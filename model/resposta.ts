@@ -29,11 +29,15 @@ export default class RespostaModel {
         return new RespostaModel(valor, false)
     }
 
+    revelar(){
+        return new RespostaModel(this.#valor, this.#certa, true)
+    }
+
     paraObjeto(){
         return{
             valor: this.#valor,
-            certa: this.#revelada,
-            revelada: this.#revelada,
+            certa: this.#certa,
+            revelada: this.#revelada
         }
     }
 }

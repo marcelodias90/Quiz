@@ -22,7 +22,7 @@ export default function Questionario(props: QuestionarioProps){
             {props.questao ? //caso demore pra renderizar
                 <Questao 
                 valor={props.questao}
-                tempoPraResposta={6}
+                //tempoPraResposta={6}
                 respostaFornecida={respostaFornecida}
                 tempoEsgotado={props.irPraProximoPasso}
             /> : false
